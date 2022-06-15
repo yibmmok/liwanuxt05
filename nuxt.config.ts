@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     modules: [
         '@formkit/nuxt',
         '@nuxtjs/tailwindcss',
-        //'@vueuse/nuxt',
+        '@vueuse/nuxt',
     ],
     css: [
         '~/assets/css/base.css',
