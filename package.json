@@ -7,8 +7,17 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "@formkit/nuxt": "^1.0.0-beta.8",
+    "@nuxtjs/tailwindcss": "^5.1.2",
     "@tinymce/tinymce-vue": "^5.0.0",
-    "tinymce": "^6.0.2",
-    "nuxt": "3.0.0-rc.4"
+    "jwt-decode": "^3.1.2",
+    "nuxt": "3.0.0-rc.4",
+    "tinymce": "^6.0.2"
+  },
+  "dependencies": {
+    "@formkit/i18n": "^1.0.0-beta.8",
+    "@formkit/tailwindcss": "^1.0.0-beta.8",
+    "@formkit/themes": "^1.0.0-beta.8",
+    "@tailwindcss/line-clamp": "^0.4.0"
   }
 }

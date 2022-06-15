@@ -1,8 +1,13 @@
 import { defineNuxtConfig } from 'nuxt'
 
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+// https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-	ssr: false,
+    buildModules: [
+    	// '@nuxtjs/tailwindcss',
+        // '@vueuse/nuxt',
+        // '@tinymce/tinymce-vue',
+    ],
+    ssr: false,
     meta: {
         meta: [
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -15,11 +20,12 @@ export default defineNuxtConfig({
     modules: [
         '@formkit/nuxt',
         '@nuxtjs/tailwindcss',
-        //'@vueuse/nuxt',
+        '@vueuse/nuxt',
+        // '@tinymce/tinymce-vue'
     ],
     css: [
         '~/assets/css/base.css',
-    ], 
+    ],
     server: {
         port: 8000,
     },    
@@ -33,5 +39,5 @@ export default defineNuxtConfig({
     formkit: {
         defaultConfig: true,
         configFile: "formkit.config.ts"
-    },    
+    },
 })
